@@ -1,0 +1,103 @@
+.container{
+    padding: 0 160px;
+}
+
+body{
+    cursor: none;
+}
+.cursor {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    backdrop-filter: sepia(20%);
+    background-size: cover;
+}
+.cursor-grow {
+    width: 6rem;
+    height: 6rem;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: background, transform;
+    transform-origin: 100% 100%;
+    backdrop-filter: sepia(20%);
+    background-size: cover;
+    transition: all .2s;
+}
+
+
+/************** Title Style *****************/
+.title p{
+    font-family: var(--ff-en-roboto);
+    font-size: 2.625rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+/************** More Btn Style *****************/
+.more-btn{
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+}
+.more-btn span{
+    font-family: var(--ff-en-roboto);
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+    padding-right: 12px;
+    cursor: pointer;
+}
+.more-btn .arrow{
+    width: 50px;
+    height: 8px;
+    display: block;
+    background-image: url(../images/arrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .3s;
+   
+}
+.more-btn .arrow:hover{
+    width: 189px;
+    height: 8px;
+    background-image: url(../images/arrow-hover.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/******* fade-down animation *******/
+@keyframes fade-down{
+    0%{
+        transform:translateY(-55px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+@keyframes fade-up{
+    0%{
+        transform:translateY(55px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
