@@ -53,5 +53,5 @@ navMenus.forEach((menu) => {
 
 
 //AOS
-AOS.init()
+// AOS.init()
 

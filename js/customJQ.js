@@ -1,11 +1,18 @@
 $(document).ready(function() {
 	$('#fullpages').fullpage({
-		//options here
+		//options 
 		autoScrolling:true,
 		scrollHorizontally: true,
 		navigation:true,
-		navigationPosition:'right'
+		navigationPosition:'right',
+		scrollingSpeed: 1000,
+
+		normalScrollElements: '.artist-horizontal',
+		scrollOverflow: true
+	
+		
 	});
 
 	
 });
+
