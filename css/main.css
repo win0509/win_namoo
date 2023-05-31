@@ -170,8 +170,8 @@
     width: 100%;
     height: auto;
     background-color: #141414;
-    overflow: hidden;
-    overflow-x: scroll;
+    overflow: auto;
+   
 }
 .artist-wrapper {
     width: 6000px;
@@ -182,10 +182,56 @@
 .artist-wrapper .artist-item{
     width: 340px;
     height: 520px;
+    position: relative;
+    overflow: hidden;
     
-}.artist-wrapper .artist-item img{
+}
+.artist-wrapper .artist-item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+   
 }
+
+.artist-wrapper .artist-item:hover .artist-txt{
+    width: 100%;
+    height: 150px;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 32px;
+    padding-right: 16px;
+    animation: artist-txt-show .3s linear;
+    
+}
+
+@keyframes artist-txt-show{
+    0%{
+        bottom: -150px;
+    }
+    100%{
+        bottom: 0;
+    }
+} 
+
+.artist-txt span{
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-family: var(--ff-en-roboto);
+    color: #fff;
+    text-align: right;
+    display: block;
+}
+.artist-txt p{
+    font-size: 4.5rem;
+    font-weight: 700;
+    font-family: var(--ff-en-roboto);
+    color: #fff;
+    text-align: right;
+}
+/* 사진 정리 */
+/* 마우스 휠하면 가로스크롤 넣어야함 */
+/* 배우 이름 디자인 */
+
 
