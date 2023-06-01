@@ -51,6 +51,46 @@ navMenus.forEach((menu) => {
   });
 
 
+//가로스크롤
+// document.addEventListener('scroll', horizontalScroll);
+
+// //Selecting Elements
+// let sticky = document.querySelector('.sticky');
+// let stickyParent = document.querySelector('.sticky-parent');
+
+// let scrollWidth = sticky.scrollWidth;
+// let verticalScrollHeight = stickyParent.getBoundingClientRect().height-sticky.getBoundingClientRect().height;
+
+// //Scroll function 
+// function horizontalScroll(){
+
+//     //Checking whether the sticky element has entered into view or not
+//     let stickyPosition = sticky.getBoundingClientRect().top;
+//     if(stickyPosition > 1){
+//         return;
+//     }else{
+//         let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
+//         sticky.scrollLeft =(scrollWidth/verticalScrollHeight)*(-scrolled)*0.85;
+    
+//     }
+// }
+
+const ArtistHorizontal = document.querySelector('.artist-horizontal');
+const ArtistWrapper = document.querySelector('.artist-wrapper')
+
+const scrollHeight = ArtistHorizontal.scrollY();
+console.log(scrollHeight);
+
+ArtistHorizontal.addEventListener('scroll', function(){
+
+});
+
+
+
+
+
+
+
 
 //AOS
 // AOS.init()

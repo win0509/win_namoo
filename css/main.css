@@ -182,9 +182,8 @@
 .artist-wrapper .artist-item{
     width: 340px;
     height: 520px;
-    position: relative;
-    overflow: hidden;
-    
+    /* position: relative;
+    overflow: hidden; */
 }
 .artist-wrapper .artist-item img{
     width: 100%;
@@ -193,7 +192,7 @@
    
 }
 
-.artist-wrapper .artist-item:hover .artist-txt{
+/* .artist-wrapper .artist-item:hover .artist-txt{
     width: 100%;
     height: 150px;
     background-color: rgba(0, 0, 0, .5);
@@ -204,16 +203,16 @@
     padding-right: 16px;
     animation: artist-txt-show .3s linear;
     
-}
+} */
 
-@keyframes artist-txt-show{
+/* @keyframes artist-txt-show{
     0%{
         bottom: -150px;
     }
     100%{
         bottom: 0;
     }
-} 
+}  */
 
 .artist-txt span{
     font-size: 1.25rem;
