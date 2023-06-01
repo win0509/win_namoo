@@ -52,43 +52,38 @@ navMenus.forEach((menu) => {
 
 
 //가로스크롤
-// document.addEventListener('scroll', horizontalScroll);
 
-// //Selecting Elements
-// let sticky = document.querySelector('.sticky');
-// let stickyParent = document.querySelector('.sticky-parent');
 
-// let scrollWidth = sticky.scrollWidth;
-// let verticalScrollHeight = stickyParent.getBoundingClientRect().height-sticky.getBoundingClientRect().height;
+//const ArtistHorizontal = document.querySelector('.artist-horizontal');
+///const ArtistWrapper = document.querySelector('.artist-wrapper')
 
-// //Scroll function 
-// function horizontalScroll(){
+//ArtistHorizontal.addEventListener('scroll', function(){
+ 
+ //const scrY = ArtistHorizontal.scrollTop();
+ ////console.log(scrY);
 
-//     //Checking whether the sticky element has entered into view or not
-//     let stickyPosition = sticky.getBoundingClientRect().top;
-//     if(stickyPosition > 1){
-//         return;
-//     }else{
-//         let scrolled = stickyParent.getBoundingClientRect().top; //how much is scrolled?
-//         sticky.scrollLeft =(scrollWidth/verticalScrollHeight)*(-scrolled)*0.85;
-    
-//     }
-// }
+ 
+//});
 
-const ArtistHorizontal = document.querySelector('.artist-horizontal');
-const ArtistWrapper = document.querySelector('.artist-wrapper')
+const ArtistHorizontal = document.querySelector(".artist-horizontal");
 
-const scrollHeight = ArtistHorizontal.scrollY();
-console.log(scrollHeight);
-
-ArtistHorizontal.addEventListener('scroll', function(){
-
+ArtistHorizontal.addEventListener("wheel", (evt) => {
+    evt.preventDefault(); 
+    ArtistHorizontal.scrollLeft += evt.deltaY;
 });
 
+/* e.preventDefault(): html 에서 a 태그나 submit 태그는 고유의 동작이 있다.
+페이지를 이동시킨다거나 form 안에 있는 input 등을 전송한다던가 그러한 동작이 있는데 
+e.preventDefault 는 그 동작을 중단시킨다.
+
+scrollLeft 속성은 선택한 요소에 가로 스크롤 값을 가져오거나 설정합니다. */
 
 
-
-
+/* deltaY :마우스휠 Y축(=상하=세로) 스크롤량 반환.
+스크롤량 나타내는 Double 자료형의 숫자 반한.
+위로 스크롤: 음(-)의 숫자 반환.
+아래로 스크롤: 양(+)의 숫자 반환.
+스크롤 안 하면: 0 반환. */
 
 
 

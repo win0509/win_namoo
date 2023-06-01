@@ -5,15 +5,20 @@ $(document).ready(function() {
 		scrollHorizontally: true,
 		navigation:true,
 		navigationPosition:'right',
-		scrollingSpeed: 1000,
+		scrollingSpeed: 1200,
 
 		normalScrollElements: '.artist-horizontal',
-		scrollOverflow: true
-	
+		//scrollOverflow: true
 		
 	});
 
+	
 
+	
+
+	
+	
+	   
 	
 
 	
