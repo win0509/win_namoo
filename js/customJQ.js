@@ -9,8 +9,16 @@ $(document).ready(function() {
 
 		normalScrollElements: '.artist-horizontal',
 		//scrollOverflow: true
-		
 	});
+
+
+
+
+	
+
+
+
+
 
 	
 
@@ -23,4 +31,5 @@ $(document).ready(function() {
 
 	
 });
+
 

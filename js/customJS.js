@@ -31,6 +31,8 @@ setInterval(typing, 300)
 //Cursor Style
 let mouseCursor = document.querySelector(".cursor");
 let navMenus = document.querySelectorAll(".nav-bar li a"); 
+let moreBtnspan = document.querySelectorAll('.more-btn span');
+let moreBtnarrow = document.querySelectorAll('.more-btn .arrow')
 window.addEventListener("scroll", cursor);
 window.addEventListener("mousemove", cursor);
 function cursor(e) {
@@ -48,23 +50,28 @@ navMenus.forEach((menu) => {
     //   mouseCursor.style.zIndex = "1000";
     //   menu.classList.remove("hovered-link");
     });
-  });
 
+    moreBtnspan.forEach((btnspan) => {
+      btnspan.addEventListener("mouseover", function(){
+        mouseCursor.classList.add("cursor-grow");
+      });
+      btnspan.addEventListener("mouseleave", function(){
+        mouseCursor.classList.remove("cursor-grow");
+      });
+    }); 
+  });
+  
+  moreBtnarrow.forEach((btnarrow) => {
+    btnarrow.addEventListener("mouseover", function(){
+      mouseCursor.classList.add("cursor-grow");
+    });
+    btnarrow.addEventListener("mouseleave", function(){
+      mouseCursor.classList.remove("cursor-grow");
+    });
+  });
+ 
 
 //가로스크롤
-
-
-//const ArtistHorizontal = document.querySelector('.artist-horizontal');
-///const ArtistWrapper = document.querySelector('.artist-wrapper')
-
-//ArtistHorizontal.addEventListener('scroll', function(){
- 
- //const scrY = ArtistHorizontal.scrollTop();
- ////console.log(scrY);
-
- 
-//});
-
 const ArtistHorizontal = document.querySelector(".artist-horizontal");
 
 ArtistHorizontal.addEventListener("wheel", (evt) => {
