@@ -301,7 +301,82 @@
   background-color: #141414;
 
 }
+.news .title{
+    padding-bottom: 2rem;
+}
+.news-wrapper{
+    width: 100%;
+    /* overflow: hidden; */
 
+
+}
+.news-wrap{
+    width: 4000px;
+    display: flex;
+    flex-wrap: no-wrap;
+    column-gap: 1.5rem; 
+    animation: loopslide 50s linear infinite;
+
+}
+
+@keyframes loopslide{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-4000px);
+    }
+}
+.news-wrap:hover{
+    animation-play-state:paused;
+}
+
+.news-wrap .new-item{
+    width: 30%;
+    height: 660px;
+    position: relative;
+}
+
+.news-wrap .new-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.news-wrap .new-item .new-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-style: var(--ff-en-roboto);
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 40px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.news-wrap .new-item .new-text .new-head{
+    /* display: inline-block; */
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 400;
+}
+.news-wrap .new-item .new-text .new-head span{
+    /* display: block; */
+    color: #7b7b7b;
+    padding-left: 12px;
+}
+.news-wrap .new-item .new-text .new-sub{
+    font-size: 2rem;
+    color: #fff;
+    font-style: var(--ff-kr-notosans);
+    font-weight: 600;
+}
+.news-wrap .new-item .new-text .new-by{
+    font-style: var(--ff-kr-notosans);
+    font-size: 1rem;
+    color: #fff;
+}
 /********************** Namooactors News **********************/
 .information{
   background-color: #141414;
@@ -396,9 +471,7 @@
     font-size: 20px;
     color: #fff;
     font-weight: 400;
-    letter-spacing: 2px;
-    
+    letter-spacing: 2px;   
 }
-
 
 
