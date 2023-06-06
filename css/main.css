@@ -46,6 +46,19 @@
     transform: scale(1.2);
 }
 
+.landing-page .nav-wrap .mobile-menu-icon{
+    display: none;
+}
+.landing-page .nav-wrap .mobile-menu-icon{
+    width: 35px;
+    height: 25px;
+    cursor: pointer;
+}
+.landing-page .nav-wrap .mobile-menu-icon img{
+    width: 100%;
+    height: 100%;
+}
+
 .landing-page-maintxt{
     display: flex;
     justify-content: space-between;
@@ -350,14 +363,14 @@
     width: 100%;
     height: 200px;
     background-color: rgba(0, 0, 0, .5);
-    padding: 40px 0 0 20px;
+    padding: 52px 0 0 20px;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
 .news-wrap .new-item .new-text .new-head{
     /* display: inline-block; */
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #fff;
     font-weight: 400;
 }
@@ -367,7 +380,7 @@
     padding-left: 12px;
 }
 .news-wrap .new-item .new-text .new-sub{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #fff;
     font-style: var(--ff-kr-notosans);
     font-weight: 600;
@@ -377,7 +390,9 @@
     font-size: 1rem;
     color: #fff;
 }
-/********************** Namooactors News **********************/
+
+
+/********************** Namooactors Information**********************/
 .information{
   background-color: #141414;
 }
@@ -453,7 +468,7 @@
     border: 2px solid #fff;
 }
 
-/* footer */
+/************************* footer *************************/
 .footer-wrap{
     background-color: #141414;
 }

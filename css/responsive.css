@@ -1,0 +1,302 @@
+@media screen and (max-width:1600px){
+    /* Landing Page */
+    .landing-page .nav-bar{
+        column-gap: 40px;
+    }
+    .landing-page-maintxt .left-year{
+        font-size: 120px;
+    }
+    .landing-page-maintxt .right-year{
+        font-size: 120px;
+    }
+    .landing-page-maintxt .center-text{
+        font-size: 32px;
+    }
+
+    /* Company Intro */
+    .intro .intro-wrap p{
+        font-size: 28px;
+    }
+
+  
+
+}
+
+
+@media screen and (max-width:1320px){
+    /* Common Stlye */
+    .title p{
+        font-size: 2rem;
+      }
+
+    .container{
+        padding: 0 100px;
+    }
+
+      /* landing Page */
+    .landing-page header .nav-wrap{
+        padding: 0 6.25rem;
+    }
+  
+    .landing-page-maintxt .left-year{
+        font-size: 90px;
+    }
+    .landing-page-maintxt .right-year{
+        font-size: 90px;
+    }
+    .landing-page-maintxt .center-text{
+        font-size: 28px;
+    }
+
+    .landing-page .nav-bar{
+        display: none;
+    }
+
+    .landing-page .nav-wrap .mobile-menu-icon{
+        display: block;
+    }
+
+      /* Company Intro */
+
+
+    /* Centents */
+    .contents-wrapper .content-top{
+        padding: 0 100px;
+    }
+    .contents-wrapper .content-bottom{
+        padding: 0 100px;
+    }
+    .contents-wrapper .content-text-head h2{
+        font-size: 4.5rem;
+        line-height: 1.2;
+    }
+    .contents-wrapper .content-text-sub p{
+        font-size: 1.4rem;
+        /* overflow: hidden;  		
+        text-overflow: ellipsis;  	 
+        white-space: nowrap; 		
+        word-break:break-all */
+    }
+}
+
+@media screen and (max-width:1020px){
+    /* landing page */
+    .container{
+        padding: 0 70px;
+    }
+    .landing-page header .nav-wrap{
+        padding: 0 4.375rem;
+    }
+    .landing-page-maintxt{
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+    .landing-page-maintxt .center-text{
+        font-size: 32px;
+    }
+    .landing-page .logo li{
+        font-size: 36px;
+    }
+
+      /* Company Intro */
+      .intro .container{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        row-gap: 4rem;
+      }
+      .intro .intro-wrap p{
+        font-size: 26px;
+        /* overflow: hidden;  		
+        text-overflow: ellipsis;  	 
+        white-space: nowrap; 		
+        word-break:break-all */
+      }
+
+    /* Centents */
+    .contents-wrapper .content-top{
+        display: none;
+    }
+    .contents-wrapper .content-bottom{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 100%;
+        padding: 0 70px;
+        row-gap: 2rem;
+    }
+    
+    .content-text-head br{
+        display:none;
+     }
+     .content-text-sub br{
+        display: none;
+    }
+     .contents-wrapper .content-text-head h2{
+        font-size: 4rem;
+     }
+     .contents-wrapper .content-text-sub p{
+        font-size: 1.8rem;
+     }
+
+}
+
+
+@media screen and (max-width:760px){
+    /* Common Style */
+    .title p{
+        font-size: 1.5rem;
+        }
+    .more-btn span{
+        font-size: 1rem;
+     }
+    .container{
+        padding: 0 40px
+    }
+
+    /* landing page */
+    .landing-page header .nav-wrap{
+        padding: 0 2.5rem;
+    }
+    .landing-page .logo li{
+        font-size: 32px;
+    }
+    .landing-page-maintxt .left-year{
+        font-size: 70px;
+    }
+    .landing-page-maintxt .right-year{
+        font-size: 70px;
+    }
+    .landing-page-maintxt .center-text{
+        font-size: 26px;
+    }
+    /* mobile-menu-icon */
+    .landing-page .nav-wrap .mobile-menu-icon{
+        width: 30px;
+        height: 20px;
+    }
+
+     /* Company Intro */
+     .intro .container{
+        row-gap: 3rem;
+     }
+    .intro .intro-wrap p{
+        font-size: 22px;
+        word-break: keep-all;
+        width: 82%;
+    }
+    .intro-text br{
+        display: none;
+    }
+
+    /* Centents */
+    .contents-wrapper .content-bottom{
+        padding: 0 40px;
+        row-gap: 1rem;
+    }
+ 
+    .contents-wrapper .content-text-head h2{
+        font-size: 2.5rem;
+     }
+     .contents-wrapper .content-text-sub p{
+        font-size: 1.5rem;
+     }
+    
+}
+
+@media screen and (max-width:500px){
+
+    /* landing Page */
+    .landing-page header .nav-wrap{
+        height: 4.25rem;
+    }
+    .landing-page .logo li{
+        font-size: 26px;
+    }
+    .landing-page-maintxt{
+        row-gap: 2rem;
+    }
+    .landing-page-maintxt .left-year{
+        font-size: 60px;
+    }
+    .landing-page-maintxt .right-year{
+        font-size: 60px;
+    }
+    .landing-page-maintxt .center-text{
+        font-size: 24px;
+    }
+      /* mobile-menu-icon */
+      .landing-page .nav-wrap .mobile-menu-icon{
+        width: 25px;
+        height: 15px;
+    }
+       /* Company Intro */
+       .intro .intro-wrap p{
+        font-size: 18px;
+    }
+        /* Centents */
+        .contents-wrapper .content-bottom{
+            padding: 0 40px;
+            row-gap: 1rem;
+        }
+        .contents-wrapper .content-text-head h2{
+            font-size: 2.5rem;
+         }
+         .contents-wrapper .content-text-sub p{
+            font-size: 1.5rem;
+         }
+
+    /* Centents */
+    .contents-wrapper .content-bottom{
+        row-gap: 1rem;
+    }
+ 
+    .contents-wrapper .content-text-head h2{
+        font-size: 1.8rem;
+     }
+     .contents-wrapper .content-text-sub p{
+        font-size: 1rem;
+     }
+}
+
+
+@media screen and (max-width:400px){
+    /* Common Style */
+    .title p{
+        font-size: 1rem;
+    }
+    .container{
+        padding: 0 16px
+    }
+    /* landing page */
+    .landing-page header .nav-wrap{
+        padding: 0 1rem;
+    }
+    .landing-page .logo li{
+        font-size: 20px;
+    }
+    .landing-page-maintxt{
+        row-gap: 1rem;
+    }
+    .landing-page-maintxt .left-year{
+        font-size: 40px;
+    }
+    .landing-page-maintxt .right-year{
+        font-size: 40px;
+    }
+    .landing-page-maintxt .center-text{
+        font-size: 16px;
+    }
+
+      /* Company Intro */
+    .intro .container{
+        row-gap: 2rem;
+     }
+    .intro .intro-wrap p{
+        font-size: 16px;
+    }
+    .contents-wrapper .content-bottom{
+        padding: 0 16px;
+    }
+}
+
