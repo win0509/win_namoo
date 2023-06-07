@@ -91,6 +91,43 @@
     font-weight: 600;
 }
 
+/********* Overlay Menus Style *********/
+.overlay{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+}
+.overlay.on{
+    opacity: 1;
+    visibility: visible;
+}
+.overlay .overlay-menus-box{
+    /* width: 30%; */
+    /* height: 100%; */
+    /* background-color: #141414; */
+    padding: 40px 100px;
+}
+
+.overlay .overlay-nav ul{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+.overlay .overlay-nav li a{
+    font-family: var(--ff-kr-notosans);
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+}
+.overlay .overlay-close{
+    text-align: right;
+}
 
 /******* year animation *******/
 @keyframes leftyear{

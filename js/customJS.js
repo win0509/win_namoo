@@ -13,6 +13,22 @@
 //      },100);
 
 
+//Overlay menus
+const mobileMenuIcon = document.querySelector('.mobile-menu-icon img');
+const mobileMenuClose = document.querySelector('.overlay-close img');
+const overlay = document.querySelector('.overlay')
+
+mobileMenuIcon.addEventListener('click', function (){
+  overlay.classList.add('on');
+  document.body.style.overflow = "hidden";
+});
+
+mobileMenuClose.addEventListener('click', function (){
+  overlay.classList.remove('on');
+  document.body.style.overflow = "auto";
+});
+
+
 //Typing Text
 const content = "나무엑터스가 되었습니다";
 const typingtext = document.querySelector(".typingtext");

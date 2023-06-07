@@ -18,8 +18,6 @@
         font-size: 28px;
     }
 
-  
-
 }
 
 
@@ -27,13 +25,13 @@
     /* Common Stlye */
     .title p{
         font-size: 2rem;
-      }
+    }
 
     .container{
         padding: 0 100px;
     }
 
-      /* landing Page */
+    /* landing Page */
     .landing-page header .nav-wrap{
         padding: 0 6.25rem;
     }
@@ -55,8 +53,6 @@
     .landing-page .nav-wrap .mobile-menu-icon{
         display: block;
     }
-
-      /* Company Intro */
 
 
     /* Centents */
@@ -98,20 +94,20 @@
         font-size: 36px;
     }
 
-      /* Company Intro */
-      .intro .container{
+    /* Company Intro */
+    .intro .container{
         display: flex;
         align-items: flex-start;
         flex-direction: column;
         row-gap: 4rem;
       }
-      .intro .intro-wrap p{
+    .intro .intro-wrap p{
         font-size: 26px;
         /* overflow: hidden;  		
         text-overflow: ellipsis;  	 
         white-space: nowrap; 		
         word-break:break-all */
-      }
+    }
 
     /* Centents */
     .contents-wrapper .content-top{
@@ -225,8 +221,8 @@
     .landing-page-maintxt .center-text{
         font-size: 24px;
     }
-      /* mobile-menu-icon */
-      .landing-page .nav-wrap .mobile-menu-icon{
+    /* mobile-menu-icon */
+    .landing-page .nav-wrap .mobile-menu-icon{
         width: 25px;
         height: 15px;
     }
@@ -234,17 +230,17 @@
        .intro .intro-wrap p{
         font-size: 18px;
     }
-        /* Centents */
-        .contents-wrapper .content-bottom{
-            padding: 0 40px;
-            row-gap: 1rem;
+    /* Centents */
+    .contents-wrapper .content-bottom{
+        padding: 0 40px;
+        row-gap: 1rem;
+    }
+    .contents-wrapper .content-text-head h2{
+        font-size: 2.5rem;
         }
-        .contents-wrapper .content-text-head h2{
-            font-size: 2.5rem;
-         }
-         .contents-wrapper .content-text-sub p{
-            font-size: 1.5rem;
-         }
+    .contents-wrapper .content-text-sub p{
+        font-size: 1.5rem;
+        }
 
     /* Centents */
     .contents-wrapper .content-bottom{
