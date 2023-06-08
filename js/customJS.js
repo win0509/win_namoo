@@ -108,8 +108,35 @@ scrollLeft 속성은 선택한 요소에 가로 스크롤 값을 가져오거나
 아래로 스크롤: 양(+)의 숫자 반환.
 스크롤 안 하면: 0 반환. */
 
+//News roller
 
+let roller = document.querySelector('.news-wrap');
+roller.id = 'roller1';
 
+let clone = roller.cloneNode(true);
+clone.id = 'roller2';
+document.querySelector('.news-wrap').appendChild(clone);
+
+document.querySelector('#roller1').style.left= '0px';
+document.querySelector('#roller2').style.left= document.querySelector('.news-wrap').offsetWidth + 'px';
+
+roller.classList.add('original');
+clone.classList.add('clone');
+
+let rollerWidth = document.querySelector('.news-wrap').offsetWidth;//회전 배너 너비값
+let betweenDistance = 1;//이동 크기 - 정수여야 함
+originalID = window.setInterval(betweenRollCallback, parseInt(1000/100), betweenDistance, document.querySelector('#roller1'));
+cloneID = window.setInterval(betweenRollCallback, parseInt(1000/100), betweenDistance, document.querySelector('#roller2'));
+
+//인터벌 애니메이션 함수(공용)
+function betweenRollCallback(d, roller){
+    let left = parseInt(roller.style.left);
+    roller.style.left = (left - d)+'px';//이동
+    //조건부 위치 리셋
+    if(rollerWidth + (left - d) <= 0){
+        roller.style.left = rollerWidth+'px';
+    }
+}
 //AOS
 // AOS.init()
 

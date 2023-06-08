@@ -102,6 +102,7 @@
     z-index: 9999;
     opacity: 0;
     visibility: hidden;
+    transition: all .3s;
 }
 .overlay.on{
     opacity: 1;
@@ -365,21 +366,52 @@
     display: flex;
     flex-wrap: no-wrap;
     column-gap: 1.5rem; 
-    animation: loopslide 50s linear infinite;
+    /* animation: loopslide 50s linear infinite; */
+    
 
 }
 
-@keyframes loopslide{
+/***** News roller animation ******/
+.news-wrap.original{
+    animation: 33s linear 0s infinite normal forwards running rollingleft1;
+}
+.roller.clone{
+    animation: 33s linear 0s infinite normal none running rollingleft2;
+}
+@keyframes rollingleft1 { /* 원본용 */
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    50.01%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes rollingleft2 { /* 클론용 */
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
+/* @keyframes loopslide{
     0%{
         transform: translateX(0);
     }
     100%{
         transform: translateX(-4000px);
     }
-}
-.news-wrap:hover{
+} */
+/* .news-wrap:hover{
     animation-play-state:paused;
-}
+} */
 
 .news-wrap .new-item{
     width: 30%;
