@@ -13,7 +13,7 @@
 //      },100);
 
 
-//Overlay menus
+///////////////////Overlay menus
 const mobileMenuIcon = document.querySelector('.mobile-menu-icon img');
 const mobileMenuClose = document.querySelector('.overlay-close img');
 const overlay = document.querySelector('.overlay')
@@ -29,7 +29,7 @@ mobileMenuClose.addEventListener('click', function (){
 });
 
 
-//Typing Text
+/////////////////////Typing Text
 const content = "나무엑터스가 되었습니다";
 const typingtext = document.querySelector(".typingtext");
 let i = 0;
@@ -48,7 +48,8 @@ setInterval(typing, 300)
 let mouseCursor = document.querySelector(".cursor");
 let navMenus = document.querySelectorAll(".nav-bar li a"); 
 let moreBtnspan = document.querySelectorAll('.more-btn span');
-let moreBtnarrow = document.querySelectorAll('.more-btn .arrow')
+let moreBtnarrow = document.querySelectorAll('.more-btn .arrow');
+let overlayMenus = document.querySelectorAll('.overlay-nav li a');
 window.addEventListener("scroll", cursor);
 window.addEventListener("mousemove", cursor);
 function cursor(e) {
@@ -85,15 +86,25 @@ navMenus.forEach((menu) => {
       mouseCursor.classList.remove("cursor-grow");
     });
   });
+
+  overlayMenus.forEach((olmenu) => {
+    olmenu.addEventListener("mouseover", function(){
+      mouseCursor.classList.add("cursor-grow");
+    });
+    olmenu.addEventListener("mouseleave", function(){
+      mouseCursor.classList.remove("cursor-grow");
+    });
+ });
  
 
-//가로스크롤
+//////////////////////가로스크롤
 const ArtistHorizontal = document.querySelector(".artist-horizontal");
 
 ArtistHorizontal.addEventListener("wheel", (evt) => {
     evt.preventDefault(); 
     ArtistHorizontal.scrollLeft += evt.deltaY;
 });
+
 
 /* e.preventDefault(): html 에서 a 태그나 submit 태그는 고유의 동작이 있다.
 페이지를 이동시킨다거나 form 안에 있는 input 등을 전송한다던가 그러한 동작이 있는데 
@@ -108,35 +119,26 @@ scrollLeft 속성은 선택한 요소에 가로 스크롤 값을 가져오거나
 아래로 스크롤: 양(+)의 숫자 반환.
 스크롤 안 하면: 0 반환. */
 
-//News roller
-
+//////////////////////////News 무한 롤링배너
+//롤링 배너 복제본 생성
 let roller = document.querySelector('.news-wrap');
-roller.id = 'roller1';
+roller.id = 'roller1'; // 아이디 부여
 
-let clone = roller.cloneNode(true);
+let clone = roller.cloneNode(true); // cloneNode : 노드 복제. 기본값은 false. 자식 노드까지 복제를 원하면 true 사용 
 clone.id = 'roller2';
-document.querySelector('.news-wrap').appendChild(clone);
+document.querySelector('.news-wrapper').appendChild(clone);  //news-wrapper 하위 자식으로 부착
 
 document.querySelector('#roller1').style.left= '0px';
 document.querySelector('#roller2').style.left= document.querySelector('.news-wrap').offsetWidth + 'px';
+// offsetWidth : 요소의 크기 확인(margin을 제외한 padding값, border값까지 계산한 값)
+
 
 roller.classList.add('original');
 clone.classList.add('clone');
 
-let rollerWidth = document.querySelector('.news-wrap').offsetWidth;//회전 배너 너비값
-let betweenDistance = 1;//이동 크기 - 정수여야 함
-originalID = window.setInterval(betweenRollCallback, parseInt(1000/100), betweenDistance, document.querySelector('#roller1'));
-cloneID = window.setInterval(betweenRollCallback, parseInt(1000/100), betweenDistance, document.querySelector('#roller2'));
 
-//인터벌 애니메이션 함수(공용)
-function betweenRollCallback(d, roller){
-    let left = parseInt(roller.style.left);
-    roller.style.left = (left - d)+'px';//이동
-    //조건부 위치 리셋
-    if(rollerWidth + (left - d) <= 0){
-        roller.style.left = rollerWidth+'px';
-    }
-}
+
+
 //AOS
 // AOS.init()
 
