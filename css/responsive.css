@@ -31,6 +31,8 @@
         padding: 0 100px;
     }
 
+
+
     /* landing Page */
     .landing-page header .nav-wrap{
         padding: 0 6.25rem;
@@ -76,10 +78,17 @@
 }
 
 @media screen and (max-width:1020px){
-    /* landing page */
+  
     .container{
         padding: 0 70px;
     }
+
+    /* Overlay Menus */
+    .overlay .overlay-menus-box{
+        padding: 40px 70px;
+    }
+
+    /* landing page */
     .landing-page header .nav-wrap{
         padding: 0 4.375rem;
     }
@@ -108,6 +117,23 @@
         white-space: nowrap; 		
         word-break:break-all */
     }
+    /* News */
+  .news-wrap .new-item{
+    width: 360px;
+    height: 500px;
+}   
+.news-wrap .new-item .new-text .new-head{
+    font-size: 1rem;
+}
+.news-wrap .new-item .new-text .new-sub{
+    font-size: 1.3rem;
+}
+.news-wrap .new-item .new-text .new-by{
+    font-size: .8rem;
+}
+.news-wrap .new-item .new-text{
+    height: 170px;
+}
 
     /* Centents */
     .contents-wrapper .content-top{
@@ -150,6 +176,11 @@
         padding: 0 40px
     }
 
+      /* Overlay Menus */
+      .overlay .overlay-menus-box{
+        padding: 40px 40px;
+    }
+
     /* landing page */
     .landing-page header .nav-wrap{
         padding: 0 2.5rem;
@@ -172,6 +203,20 @@
         height: 20px;
     }
 
+    /* SVG Scroll-btn */
+    .scroll-btn a{
+        font-size: .5rem;
+    }
+    .scroll-btn a svg{
+        width: 3.375rem;
+        height: 3.375rem;
+        
+    }
+    .scroll-btn a{
+        width: 3.375rem;
+        height: 3.375rem;
+    }
+
      /* Company Intro */
      .intro .container{
         row-gap: 3rem;
@@ -184,6 +229,8 @@
     .intro-text br{
         display: none;
     }
+
+  
 
     /* Centents */
     .contents-wrapper .content-bottom{
@@ -201,6 +248,14 @@
 }
 
 @media screen and (max-width:500px){
+
+      /* Overlay Menus */
+      .overlay .overlay-nav ul{
+        row-gap: 1.5rem;
+      }
+      .overlay .overlay-nav li a{
+        font-size: 1.5rem;
+      }
 
     /* landing Page */
     .landing-page header .nav-wrap{
@@ -229,6 +284,25 @@
        /* Company Intro */
        .intro .intro-wrap p{
         font-size: 18px;
+    }
+
+    /* News */
+    .news-wrap .new-item{
+        width: 320px;
+        height: 450px;
+    }   
+    .news-wrap .new-item .new-text .new-head{
+        font-size: .8rem;
+    }
+    .news-wrap .new-item .new-text .new-sub{
+        font-size: 1.1rem;
+    }
+    .news-wrap .new-item .new-text .new-by{
+        font-size: .6rem;
+    }
+    .news-wrap .new-item .new-text{
+        height: 150px;
+        padding: 28px 16px 0 16px;
     }
     /* Centents */
     .contents-wrapper .content-bottom{
@@ -264,6 +338,14 @@
     .container{
         padding: 0 16px
     }
+    /* Overlay Menus */
+    /* .overlay .overlay-menus-box{
+        padding: 40px 16px;
+    } */
+      .overlay .overlay-nav li a{
+        font-size: 1.3rem;
+      }
+
     /* landing page */
     .landing-page header .nav-wrap{
         padding: 0 1rem;

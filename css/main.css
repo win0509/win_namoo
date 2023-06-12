@@ -173,16 +173,15 @@
     font-size:12px;
     width: 4.375rem;
     height: 4.375rem;
- 
-    
 }
 /* stroke-dasharray : 첫번째 - 선길이, 두번째 - 끊어진 길이 */
 /* stroke-dashoffset : 전체 스트로크선 이동 */
 .scroll-btn a svg{
+    width: 4.375rem;
+    height: 4.375rem;
     position:absolute;
     left:0;
     top:0;
-   
 }
 .moving-circle {
     stroke-dasharray: 500;
@@ -435,7 +434,9 @@
     height: 560px;
     position: relative;
 }
-
+.news-wrap .new-item:nth-child(1){
+    margin-left: 1.5rem;
+}
 .news-wrap .new-item img{
     width: 100%;
     height: 100%;
@@ -449,7 +450,7 @@
     width: 100%;
     height: 200px;
     background-color: rgba(0, 0, 0, .5);
-    padding: 52px 20px 0 20px;
+    padding: 32px 20px 0 20px;
     display: flex;
     flex-direction: column;
     row-gap: 1rem;

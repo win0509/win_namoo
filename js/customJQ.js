@@ -9,6 +9,8 @@ $(document).ready(function() {
 
 		normalScrollElements: '.artist-horizontal',
 		//scrollOverflow: true
+
+		navigationTooltips: ['Home', 'Company', 'Artist','Centents','News','Audition'],
 	});
 
 
