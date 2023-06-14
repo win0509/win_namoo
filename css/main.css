@@ -498,6 +498,13 @@
     align-items: center;
     padding: 60px 0;
 }
+.info-item-top,
+.info-item-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .information .info-wrapper .info-item{
     width: 230px;
     height: 230px;
