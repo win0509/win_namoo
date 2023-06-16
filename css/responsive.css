@@ -12,15 +12,14 @@
     .landing-page-maintxt .center-text{
         font-size: 32px;
     }
-
     /* Company Intro */
     .intro .intro-wrap p{
         font-size: 28px;
+        
     }
-
-  
-
 }
+
+
 
 
 @media screen and (max-width:1320px){
@@ -33,8 +32,7 @@
         padding: 0 100px;
     }
 
-
-
+   
     /* landing Page */
     .landing-page header .nav-wrap{
         padding: 0 6.25rem;
@@ -57,7 +55,7 @@
     .landing-page .nav-wrap .mobile-menu-icon{
         display: block;
     }
-
+   
 
     /* Centents */
     .contents-wrapper .content-top{
@@ -88,8 +86,10 @@
     }
 }
 
+
+
+
 @media screen and (max-width:1020px){
-  
     .container{
         padding: 0 70px;
     }
@@ -128,23 +128,36 @@
         white-space: nowrap; 		
         word-break:break-all */
     }
+
+     /* Artist */
+     .artist .title p{
+        font-size: 2rem;
+     }
+     .artist-horizontal{
+        overflow-x:auto;
+        /* touch-action: pan-x; */
+    }
+     
     /* News */
-  .news-wrap .new-item{
-    width: 360px;
-    height: 500px;
-}   
-.news-wrap .new-item .new-text .new-head{
-    font-size: 1rem;
-}
-.news-wrap .new-item .new-text .new-sub{
-    font-size: 1.3rem;
-}
-.news-wrap .new-item .new-text .new-by{
-    font-size: .8rem;
-}
-.news-wrap .new-item .new-text{
-    height: 170px;
-}
+    .artist .title p{
+        font-size: 2rem;
+    }
+    .news-wrap .new-item{
+        width: 360px;
+        height: 500px;
+    }   
+    .news-wrap .new-item .new-text .new-head{
+        font-size: 1rem;
+    }
+    .news-wrap .new-item .new-text .new-sub{
+        font-size: 1.3rem;
+    }
+    .news-wrap .new-item .new-text .new-by{
+        font-size: .8rem;
+    }
+    .news-wrap .new-item .new-text{
+        height: 170px;
+    }
 
     /* Centents */
     .contents-wrapper .content-top{
@@ -184,10 +197,12 @@
     .info-item-bottom{
         column-gap: 4rem;
     }
-
-
-
+    .information .info-bottom{
+        margin-bottom: 3rem;
+    }
 }
+
+
 
 
 @media screen and (max-width:760px){
@@ -257,7 +272,6 @@
     }
 
   
-
     /* Centents */
     .contents-wrapper .content-bottom{
         padding: 0 40px;
@@ -284,7 +298,6 @@
         font-size: 1.5rem;
         line-height: 45px;
     }
-
     /* Footer */
     .footer strong {
         font-size: 20px;
@@ -295,15 +308,18 @@
     
 }
 
+
+
+
 @media screen and (max-width:500px){
 
-      /* Overlay Menus */
-      .overlay .overlay-nav ul{
-        row-gap: 1.5rem;
-      }
-      .overlay .overlay-nav li a{
-        font-size: 1.5rem;
-      }
+    /* Overlay Menus */
+    .overlay .overlay-nav ul{
+    row-gap: 1.5rem;
+    }
+    .overlay .overlay-nav li a{
+    font-size: 1.5rem;
+    }
 
     /* landing Page */
     .landing-page header .nav-wrap{
@@ -404,6 +420,9 @@
         font-size: 1.3rem;
         line-height: 40px;
      }
+     .information .info-bottom{
+        margin-bottom: 1.5rem;
+    }
 
     /* Footer */
     .footer strong {
@@ -415,6 +434,9 @@
     }
  
 }
+
+
+
 
 
 @media screen and (max-width:400px){

@@ -5,7 +5,7 @@ $(document).ready(function() {
 		scrollHorizontally: true,
 		navigation:true,
 		navigationPosition:'right',
-		scrollingSpeed: 1200,
+		scrollingSpeed: 1500,
 
 		normalScrollElements: '.artist-horizontal',
 		//scrollOverflow: true
@@ -15,6 +15,8 @@ $(document).ready(function() {
 
 
 
+
+	
 
 	// //변수 numAc에 article의 갯수 저장
 	// // var numAc = $("article").size();	
@@ -36,12 +38,13 @@ $(document).ready(function() {
 
 	
 	
-	// //브라우저를 스크롤 할때
+	//브라우저를 스크롤 할때
 	// $(".artist-horizontal").on("scroll",function(){
 	// 	// 변수 scroll에 현재 스크롤 한 만큼의 거리를 저장
-	// 	var scroll = $(this).scrollTop();		
+	// 	var scroll = $(this).scrollLeft();		
+	// 	console.log(scroll)
 	// 	//section의 left값을 스크롤한 거리만큼 마이너스 값으로 이동
-	// 	$(".artist-wrapper").stop().animate({"left":-scroll},600);
+	// 	$(".artist-horizontal").stop().animate({"left":-scroll},2000);
 	// });
 	
 	

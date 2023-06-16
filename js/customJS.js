@@ -105,6 +105,33 @@ ArtistHorizontal.addEventListener("wheel", (evt) => {
     ArtistHorizontal.scrollLeft += evt.deltaY;
 });
 
+//Touch
+// const touch = document.querySelector('.artist-horizontal')
+// ArtistHorizontal.addEventListener("touchstart", handleStart, false);
+// ArtistHorizontal.addEventListener("touchmove", handleMove, false);
+// ArtistHorizontal.addEventListener("touchend", handleEnd, false);
+
+
+// function handleStart(evt){
+//   var startId = evt.targetTouches[0].target.ArtistHorizontal;
+//   var startX = evt.changedTouches[0].pageX;
+//   var startY = evt.changedTouches[0].pageY;
+//   // alert("aaa");
+
+// };
+
+// function handleMove(evt) {
+//   // var moveId = evt.targetTouches[0].target.touch;
+//   // var moveX = evt.changedTouches[0].clientX;
+//   // var moveY = evt.changedTouches[0].clientY;
+//   console.log(moveX)
+// };
+
+// function handleEnd(evt) {
+//   var endX = evt.changedTouches[0].clientX;
+//   var endY = evt.changedTouches[0].clientY;
+// };
+ 
 
 /* e.preventDefault(): html 에서 a 태그나 submit 태그는 고유의 동작이 있다.
 페이지를 이동시킨다거나 form 안에 있는 input 등을 전송한다던가 그러한 동작이 있는데 
@@ -135,8 +162,6 @@ document.querySelector('#roller2').style.left= document.querySelector('.news-wra
 
 roller.classList.add('original');
 clone.classList.add('clone');
-
-
 
 
 //AOS
