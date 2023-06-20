@@ -44,6 +44,7 @@ function typing(){
 setInterval(typing, 300)
 
 
+
 //Cursor Style
 let mouseCursor = document.querySelector(".cursor");
 let navMenus = document.querySelectorAll(".nav-bar li a"); 
@@ -95,7 +96,7 @@ navMenus.forEach((menu) => {
       mouseCursor.classList.remove("cursor-grow");
     });
  });
- 
+
 
 //////////////////////가로스크롤
 const ArtistHorizontal = document.querySelector(".artist-horizontal");
@@ -162,6 +163,7 @@ document.querySelector('#roller2').style.left= document.querySelector('.news-wra
 
 roller.classList.add('original');
 clone.classList.add('clone');
+
 
 
 //AOS
