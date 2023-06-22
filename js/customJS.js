@@ -98,12 +98,12 @@ navMenus.forEach((menu) => {
     });
  });
 
- // 화면인식 992px 사이즈 조절
+
+// 마우스커서 550 이하로는 커스텀 제거
 //  const mediaViewContent = window.matchMedia(`(max-width: 550px)`)	// 1
-//  console.log(mediaViewContent)
+//  console.log(mediaViewContent);
    
 //    const viewChangeHandler = (mediaViewContent) => {  					// 3
-      
 //    }
    
 //    mediaViewContent.addEventListener("change", viewChangeHandler)	

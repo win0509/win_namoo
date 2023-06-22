@@ -312,7 +312,14 @@
       /* full Page */
       .fp-section, .fp-tableCell{height: 700px !important;}
 
-  
+      /* 마우스 커서 디자인 없애기 */
+      .cursor,
+      .cursor-grow{
+        display: none;
+      }
+      body{
+        cursor: auto;
+      }
 }
 
 
