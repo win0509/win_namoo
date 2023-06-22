@@ -57,6 +57,7 @@ function cursor(e) {
   mouseCursor.style.left = e.pageX + "px";
   mouseCursor.style.top = e.pageY - scrollY + "px";
 }
+
 navMenus.forEach((menu) => {
     menu.addEventListener("mouseover", () => {
       mouseCursor.classList.add("cursor-grow");
@@ -96,6 +97,16 @@ navMenus.forEach((menu) => {
       mouseCursor.classList.remove("cursor-grow");
     });
  });
+
+ // 화면인식 992px 사이즈 조절
+//  const mediaViewContent = window.matchMedia(`(max-width: 550px)`)	// 1
+//  console.log(mediaViewContent)
+   
+//    const viewChangeHandler = (mediaViewContent) => {  					// 3
+      
+//    }
+   
+//    mediaViewContent.addEventListener("change", viewChangeHandler)	
 
 
 //////////////////////가로스크롤
